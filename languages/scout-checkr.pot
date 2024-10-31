@@ -1,0 +1,115 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Scout Checkr\n"
+"POT-Creation-Date: 2022-06-11 23:30+0800\n"
+"PO-Revision-Date: 2022-06-11 23:14+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: plugin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: src/Admin/Settings.php:58
+msgid "Settings"
+msgstr ""
+
+#: src/Classes/SiteHealth.php:134
+msgid "A test is unavailable"
+msgstr ""
+
+#: src/Front/Cron.php:74
+msgid "Every minute"
+msgstr ""
+
+#: src/Front/Cron.php:79
+msgid "Every 5 minutes"
+msgstr ""
+
+#: src/Front/Cron.php:84
+msgid "Every 10 minutes"
+msgstr ""
+
+#: src/Front/Cron.php:89
+msgid "Every 30 minutes"
+msgstr ""
+
+#: templates/admin/api_settings.php:33
+msgid ""
+"To get an API key in Grafana: Open the side menu and click on the "
+"organization configuration icon and within the dropdown options, select the "
+"API Keys option (If you already have an API key from Admin Role you can skip "
+"this instruction):\n"
+msgstr ""
+
+#: templates/admin/api_settings.php:38
+msgid "Press the button to create your first API key or add a new key"
+msgstr ""
+
+#: templates/admin/api_settings.php:42
+msgid ""
+"Please name your Key, then set the \"Admin\" role. We recommend using “10y” "
+"as the value for time to live. Then press the [Add] button and proceed to "
+"the next step of the instruction."
+msgstr ""
+
+#: templates/admin/api_settings.php:46
+msgid ""
+"Press the [Copy] button to copy the API key and then hit the [Next Step] "
+"button."
+msgstr ""
+
+#: templates/admin/api_settings.php:51
+msgid "Grafana API Data for integration with site info"
+msgstr ""
+
+#: templates/admin/api_settings.php:62
+msgid ""
+"Next, enter the name of the website you are monitoring. This should be a "
+"unique name that you will remember."
+msgstr ""
+
+#: templates/admin/api_settings.php:74
+msgid ""
+"Then link to your Grafana Account by entering the correctly formatted URL"
+msgstr ""
+
+#: templates/admin/api_settings.php:85
+msgid ""
+"Next, enter your Grafana API key (Created on previous steps). You should be "
+"able to paste it into the form."
+msgstr ""
+
+#: templates/admin/api_settings.php:95
+msgid ""
+"Once everything is entered correctly you can click the [Connect] button "
+"below."
+msgstr ""
+
+#: templates/admin/api_settings.php:99
+msgid "Connect your site to Grafana Account"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#. Description of the plugin/theme
+msgid "Scout Checkr"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Spiral Scout"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://spiralscout.com/"
+msgstr ""

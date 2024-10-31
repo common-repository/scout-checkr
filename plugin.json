@@ -1,0 +1,46 @@
+{
+    "type": "app",
+    "name": "Scout Checkr",
+    "id": "scoutcheckr-app",
+    "info": {
+      "description": "WordPress plugin for Grafana",
+      "author": {
+        "name": "Spiral Scout",
+        "url": "https://spiralscout.com/"
+      },
+      "keywords": [
+        "wordpress",
+        "datasource",
+        "panel",
+        "sitehealth"
+      ],
+      "logos": {
+        "small": "https://ps.w.org/scout-checkr/assets/icon.svg",
+        "large": "https://ps.w.org/scout-checkr/assets/icon.svg"
+      },
+      "links": [
+        {
+          "name": "WordPress Plugins Repository",
+          "url": "https://wordpress.org/plugins/scout-checkr/"
+        },
+        {
+          "name": "Spiral Scout",
+          "url": "https://spiralscout.com/"
+        }
+      ],
+      "version": "0.1.75"
+    },
+    "includes": [
+      {
+        "type": "datasource",
+        "name": "WordPress data source"
+      },
+      {
+        "type": "panel",
+        "name": "WordPress status table text panel"
+      }
+    ],
+    "dependencies": {
+      "grafanaDependency": ">=8.3.0"
+    }
+  }

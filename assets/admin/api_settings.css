@@ -1,0 +1,246 @@
+/*!
+  * Scout Checkr.
+  * Copyright 2022 Spiral Scout (https://spiralscout.com/)
+  * Licensed under MIT
+  */
+
+.spiral-status-wrapper {
+    padding: 30px;
+    background: #000;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    max-width: 900px;
+    position: relative;
+}
+
+.spiral-status-wrapper img {
+    max-width: 100%;
+    margin: 10px;
+    max-height: 360px;
+}
+
+.spiral-status-wrapper input {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+}
+
+.spiral-status-wrapper a {
+    color: #39abff;
+}
+
+.spiral-status-form {
+    height: 100%;
+}
+
+.spiral-status-buttons {
+    align-self: center;
+    margin-top: 12px;
+}
+
+.spiral-status-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.spiral-status-wrapper h1,
+.spiral-status-wrapper h3 {
+    color: #f7f7f7;
+}
+
+.spiral-status-header {
+    text-align: center;
+}
+
+.spiral-status-header h1 {
+    font-size: 1.5em;
+}
+
+.spiral-status-header img {
+    width: 50px;
+}
+
+.spiral-status-header a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0.5em auto;
+    line-height: 1.2;
+}
+
+.input-wrapper label {
+    cursor: default;
+}
+
+.input-wrapper .error {
+    display: none;
+}
+
+.input-wrapper.input-error .error {
+    position: absolute;
+    font-size: 12px;
+    color: #721c24;
+    display: block;
+    bottom: 2px;
+    left: 0;
+    padding: 2px 8px;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.input-wrapper.input-error input {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.input-wrapper {
+    max-width: 330px;
+}
+
+.input-wrapper input {
+    margin-top: 4px;
+}
+
+.spiral-status-step {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none !important;
+}
+
+.spiral-status-step-1 {
+    text-align: center;
+}
+
+.spiral-status-button.prev {
+    background: transparent;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.spiral-status-button.prev:hover {
+    background: transparent;
+    opacity: .8;
+    color: #fff;
+    text-decoration: underline;
+}
+
+input.width100 {
+    width: 100%;
+}
+
+.wrap.two-cols h3 {
+    line-height: 1.5;
+}
+
+.skip-instructions {
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.skip-instructions:hover {
+    text-decoration: underline;
+}
+
+.spiral-status-wrapper.preloading  {
+    position: relative;
+}
+.spiral-status-wrapper.preloading:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 8px solid #ccc;
+    border-right-color: #000;
+    border-radius: 50%;
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.spiral-status-wrapper.preloading .spiral-status-main {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    z-index: 111;
+    opacity: .3;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .spiral-status-header a {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .wrap.two-cols {
+        display: flex;
+    }
+
+    .wrap.two-cols .col-50 {
+        width: 50%;
+    }
+
+    .spiral-status-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .spiral-status-sidebar {
+        display: flex;
+        align-items: center;
+        width: 20%;
+    }
+
+    .spiral-status-main {
+        width: 64%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spiral-status-wrapper {
+        height: calc(100vh - 200px);
+    }
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    margin: 8px;
+    padding: 12px;
+    border-radius: 4px;
+}

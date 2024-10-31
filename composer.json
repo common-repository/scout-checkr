@@ -1,0 +1,54 @@
+{
+	"version": "0.1.75",
+	"vendor-dir": "vendor",
+	"classmap-authoritative": true,
+	"sort-packages": true,
+	"preferred-install": "dist",
+	"config": {
+		"platform": {
+			"php": "7.4"
+		}
+     },
+	 "license": "MIT",
+	 "authors": [
+		 {
+			 "name": "Spiral Scout",
+			 "homepage": "https://spiralscout.com/"
+		 }
+	 ],
+     "require": {
+		"rdlowrey/auryn": "^1.4"
+	 },
+	 "require-dev": {
+		"brain/monkey": "^2.6",
+		"codeception/codeception": "^4.1",
+		"codeception/module-asserts": "^1.3",
+		"codeception/module-db": "^1.1",
+		"codeception/module-webdriver": "^1.2",
+		"phpcompatibility/php-compatibility": "^9.3",
+		"inpsyde/php-coding-standards": "^1@dev"
+	 },
+	"extra": {
+		"phpcodesniffer-search-depth": 1
+	 },
+     "autoload": {
+        "psr-0": {
+						"SpiralGrafana\\": "src"
+	        	 },
+        "psr-4": {
+						"SpiralGrafana\\": "src"
+                 },
+        "classmap": [
+			"src"
+		]
+     },
+	"scripts": {
+		"unit": [
+			"php vendor/bin/codecept run -vvv unit -c .codeception.yml"
+		],
+		"cs": "vendor/bin/phpcs --standard=.phpcs.xml > coding-standarts.txt",
+		"cs-fix": "vendor/bin/phpcbf -v --standard=.phpcs.xml"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
